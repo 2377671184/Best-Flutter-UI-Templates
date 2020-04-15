@@ -27,6 +27,7 @@ jobs:
           channel: "stable"
           flutter-version: "1.12.x"
       # 下载项目依赖
+      - run: cd ./best-flutter-ui-templates
       - run: flutter pub get
       # 执行测试
       - run: flutter test
